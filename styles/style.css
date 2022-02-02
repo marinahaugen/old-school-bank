@@ -6,7 +6,7 @@ html {
 
 body {
   width: 700px;
-  margin: 0 auto;
+  margin: 0 auto; /* auto divides the available horizontal space evenly between left and right */
   background-color: rgb(233, 193, 233);
   padding: 0 20px 20px 20px;
   border: 5px solid blueviolet;
@@ -17,6 +17,11 @@ p {
   width: 500px;
   border: 2px solid antiquewhite;
   text-align: center;
+}
+
+img {
+  display: block; /* The margin applied to a block element will be respected by other elemements on the page. In contrast img are inline elements */
+  margin: 0 auto;
 }
 
 
