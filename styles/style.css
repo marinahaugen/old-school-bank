@@ -12,16 +12,26 @@ body {
   border: 5px solid blueviolet;
 }
 
-p {
+#valueProposition {
   color: blueviolet;
   width: 500px;
   border: 2px solid antiquewhite;
   text-align: center;
 }
 
-img {
-  display: block; /* The margin applied to a block element will be respected by other elemements on the page. In contrast img are inline elements */
-  margin: 0 auto;
+.container {
+  position: relative;
+}
+
+#arrow {
+font-size: 40px;
+font-weight: bold;
+color: antiquewhite;
+position: absolute;
+bottom: 5px;
+right: 20px;
+padding-left: 20px;
+padding-right: 70px;
 }
 
 

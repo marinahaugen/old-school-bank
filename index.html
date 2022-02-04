@@ -1,15 +1,18 @@
 <!-- Tell the browser that the doc being rendered is an HTML doc, prevent browser to enter quirks mode -->
 <!DOCTYPE html>
-<html> <!-- Root element -->
+<html lang="en-US"> <!-- Root element -->
   <head> <!-- Contains everything that is NOT content you show on the page (e.g. keywords, style sheets, char set declaration) -->
     <meta charset="utf-8"> <!-- UTF-8 which includes most characters from the vast majority of written languages -->
     <title>Old School Bank</title> <!-- title that appears in the browser tab the page is loaded in -->
     <link href="styles/style.css" rel="stylesheet"> <!--rel is the relationship between the linked doc and this doc-->
+    <meta name="author" content="Marina Santos Haugen">
+    <meta name="description" content="This solution is made for learning purposes">
+    <link rel="icon" href="images/heart-icon.png">
   </head>
   <body>
     <h1>Old School Bank</h1>
     <h2>Hello, Marina!</h2>
-    <p>This is an ordinary bank, like any other, but we try to be more expensive</p>
+    <p id="valueProposition">This is an ordinary bank, like any other, but we try to be more expensive</p>
     <h3>Choose between the following operations: </h3>
     <ol>
       <li><a href="http://www.mozilla.org">Create an account</a></li>
@@ -17,7 +20,12 @@
       <li><a href="http://www.mozilla.org">Get the details of a given account</a></li>
       <li><a href="http://www.mozilla.org">Update the name of a given account</a></li>
     </ol>
-    <img src="images/old-school-cassettes.jpg" alt="image of old school cassettes"/>
-    <script src="scripts/main.js"></script>
+    <div class="container">
+      <img src="images/old-school-cassettes.jpg" alt="image of old school"/>
+      <p id="arrow">></p>
+    </div>
+    <br>
+    <button>Enter name</button>
+    <script src="scripts/main.js"></script> <!-- The browser reads code in the order it appears in the file. If the JavaScript loads first and it is supposed to affect the HTML that hasn't loaded yet, there could be problems -->
   </body>
 </html>
