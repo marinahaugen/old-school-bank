@@ -1,15 +1,41 @@
-html {
-  font-size: 15px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: antiquewhite;
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(47, 25, 25);
+  color: white;
+  text-align: center;
+  z-index: 1;
+  padding: 10px;
 }
 
-body {
-  width: 700px;
-  margin: 0 auto; /* auto divides the available horizontal space evenly between left and right */
-  background-color: rgb(233, 193, 233);
-  padding: 0 20px 20px 20px;
-  border: 5px solid blueviolet;
+header h1 {
+  border: 2px solid white;
+  padding: 6px 12px;
+  display: inline-block; /* block element -> border over the whole box, inline -> can't use margin and padding properly, inline-block -> perfect */
+  border-radius: 36px;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner img {
+  max-width: 100%;
+}
+
+.banner .welcome-message {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  background-color: rgb(47, 25, 25, .7);
+  color: white;
+  padding: 30px;
+}
+
+.banner h2 {
+  font-size: 25px;
 }
 
 #valueProposition {
