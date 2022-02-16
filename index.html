@@ -1,21 +1,32 @@
 <!-- Tell the browser that the doc being rendered is an HTML doc, prevent browser to enter quirks mode -->
 <!DOCTYPE html>
-<html lang="en-US"> <!-- Root element -->
-  <head> <!-- Contains everything that is NOT content you show on the page (e.g. keywords, style sheets, char set declaration) -->
-    <meta charset="utf-8"> <!-- UTF-8 which includes most characters from the vast majority of written languages -->
-    <title>Old School Bank</title> <!-- title that appears in the browser tab the page is loaded in -->
-    <link href="styles/style.css" rel="stylesheet"> <!--rel is the relationship between the linked doc and this doc-->
-    <meta name="author" content="Marina Santos Haugen">
-    <meta name="description" content="This solution is made for learning purposes">
-    <meta name="viewport" content="width=device-width, inital-scale=1.0">
-    <link rel="icon" href="images/heart-icon.png">
+<html lang="en-US">
+  <!-- Root element -->
+  <head>
+    <!-- Contains everything that is NOT content you show on the page (e.g. keywords, style sheets, char set declaration) -->
+    <meta charset="utf-8" />
+    <!-- UTF-8 which includes most characters from the vast majority of written languages -->
+    <title>Old School Bank</title>
+    <!-- title that appears in the browser tab the page is loaded in -->
+    <link href="styles/style.css" rel="stylesheet" />
+    <!--rel is the relationship between the linked doc and this doc-->
+    <meta name="author" content="Marina Santos Haugen" />
+    <meta
+      name="description"
+      content="This solution is made for learning purposes"
+    />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+    <link rel="icon" href="images/heart-icon.png" />
   </head>
   <body>
     <header>
       <h1>Old School Bank</h1>
     </header>
     <section class="banner">
-      <img src="images/bank-building1600crop.png" alt="Picture of the bank building">
+      <img
+        src="images/bank-building1600crop.png"
+        alt="Picture of the bank building"
+      />
       <div class="welcome-message">
         <h2>Welcomme to Old School Bank's Admin Portal</h2>
       </div>
@@ -29,32 +40,50 @@
       </ul>
     </nav>
     <main>
-    <p id="valueProposition">This is an ordinary bank, like any other, but we try to be more expensive - and we have the best employees. Like you!</p>
-    <h3>Choose between the following operations: </h3>
-    <ol>
-      <li><a href="http://www.mozilla.org">Create an account</a></li>
-      <li><a href="http://www.mozilla.org">Get a list of accounts</a></li>
-      <li><a href="http://www.mozilla.org">Get the details of a given account</a></li>
-      <li><a href="http://www.mozilla.org">Update the name of a given account</a></li>
-    </ol>
-    <section>
-      <h3>We also have cassettes and vinyl on sale</h3>
-      <div class="container-sale">
-        <img src="images/old-school-cassettes.jpg" alt="image of old school"/>
-        <p id="arrow">></p>
-      </div>
-    </section>
-    <section>
-      <h3>Employee of the month</h3>
-      <p>It's Super Mario!</p>
-      <img src="images/mario400.png" alt="Picture of employee of the month">
-    </section>
-    <br>
-    <button>Enter name</button>
-  </main>
+      <p id="valueProposition">
+        This is an ordinary bank, like any other, but we try to be more
+        expensive - and we have the best employees. Like you!
+      </p>
+      <h3>Choose between the following operations:</h3>
+      <ol>
+        <li><a href="http://www.mozilla.org">Create an account</a></li>
+        <li><a href="http://www.mozilla.org">Get a list of accounts</a></li>
+        <li>
+          <a href="http://www.mozilla.org"
+            >Get the details of a given account</a
+          >
+        </li>
+        <li>
+          <a href="http://www.mozilla.org"
+            >Update the name of a given account</a
+          >
+        </li>
+      </ol>
+      <section class="container-sale">
+        <hr />
+        <h3>We also have cassettes and vinyl on sale</h3>
+        <div>
+          <img
+            src="images/old-school-cassettes.jpg"
+            alt="image of old school"
+          />
+          <p id="arrow">></p>
+        </div>
+      </section>
+      <section class="info">
+        <hr />
+        <h3>Employee of the month</h3>
+        <p>It's Super Mario!</p>
+        <img src="images/mario400.png" alt="Picture of employee of the month" />
+      </section>
+    </main>
     <footer>
+      <hr />
       <p>©Copyright 2050 by nobody. All rights reversed.</p>
+      <br />
+      <button>Enter name</button>
     </footer>
-    <script src="scripts/main.js"></script> <!-- The browser reads code in the order it appears in the file. If the JavaScript loads first and it is supposed to affect the HTML that hasn't loaded yet, there could be problems -->
+    <script src="scripts/main.js"></script>
+    <!-- The browser reads code in the order it appears in the file. If the JavaScript loads first and it is supposed to affect the HTML that hasn't loaded yet, there could be problems -->
   </body>
 </html>
