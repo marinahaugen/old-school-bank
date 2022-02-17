@@ -3,6 +3,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+* , *::after, *::before{
+  box-sizing: border-box; /* to incl padding */
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -27,12 +31,8 @@ section.banner {
 }
 
 section.banner img {
-  max-width: 100%;
+  width: 100%;
   display: block;
-}
-
-img[src="images/old-school-cassettes.jpg"] {
-  max-width: 100%;
 }
 
 section.banner .welcome-message {
@@ -66,13 +66,22 @@ nav li {
   width: 25%;
 }
 
-nav li a {
+a {
   text-decoration: none;
   color: white;
 }
 
-nav li a:hover {
+a:hover {
   text-decoration: underline;
+}
+
+#valueProposition {
+  color: rgb(47, 25, 25);
+  border: 2px solid rgb(155, 113, 37);
+  text-align: center;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 36px;
 }
 
 main {
@@ -80,17 +89,38 @@ main {
   width: 800px;
   margin: 20px auto;
   padding: 0 40px;
-  box-sizing: border-box;
+  text-align: center;
 }
 
-#valueProposition {
-  color: gray;
-  border: 2px solid rgb(155, 113, 37);
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.wrapper div {
+  background-color: rgb(155, 113, 37);
+  padding: 10px;
   text-align: center;
+  /* TODO: how to align text in the midle of the box? */
+}
+
+.image-aside {
+  width: 100%;
+  display: block;
 }
 
 .container-sale {
   position: relative;
+  padding: 0px 40px 15px 40px;
+  text-align: center;
+}
+
+.info {
+  padding: 0px 40px 15px 40px;
+  text-align: center;
 }
 
 #arrow {
@@ -101,15 +131,14 @@ main {
   bottom: 5px;
   right: 20px;
   padding-left: 20px;
-  padding-right: 70px;
+  padding-right: 50px;
 }
 
-section.container-sale {
-  background-color: aqua;
-}
-
-section.info {
-  background-color: aqua;
+footer {
+  max-width: 100%;
+  width: 800px;
+  margin: 16px auto;
+  text-align: center;
 }
 
 @media screen and (max-width: 1000px) {
@@ -132,8 +161,6 @@ section.info {
 
 @media screen and (max-width: 600px) {
   .banner .welcome-message {
-    max-width: 100%;
-    width: 00px;
     margin: 0 auto;
     padding: 2px;
     font-size: 8px; /*Change to vw - viewport width */

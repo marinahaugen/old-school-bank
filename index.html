@@ -33,53 +33,61 @@
     </section>
     <nav>
       <ul>
-        <li>Home</li>
-        <li>Something cool</li>
-        <li>Operations</li>
-        <li><a href="about.html">About the project</a></li>
+        <li><a href="index.html"></a>Home</li>
+        <li><a href="index.html#operations">Operations</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="login">Login</a></li>
       </ul>
     </nav>
     <main>
+      <h2 id="operations"></h2>
       <p id="valueProposition">
         This is an ordinary bank, like any other, but we try to be more
         expensive - and we have the best employees. Like you!
       </p>
-      <h3>Choose between the following operations:</h3>
-      <ol>
-        <li><a href="http://www.mozilla.org">Create an account</a></li>
-        <li><a href="http://www.mozilla.org">Get a list of accounts</a></li>
-        <li>
+      <h3 id="operations">Choose between the following operations</h3>
+      <div class="wrapper">
+        <div><a href="http://www.mozilla.org">Create an account</a></div>
+        <div><a href="http://www.mozilla.org">Get a list of accounts</a></div>
+        <div>
           <a href="http://www.mozilla.org"
             >Get the details of a given account</a
           >
-        </li>
-        <li>
+        </div>
+        <div>
           <a href="http://www.mozilla.org"
             >Update the name of a given account</a
           >
-        </li>
-      </ol>
+        </div>
+      </div>
+    </main>
+    <aside>
+      <hr/>
       <section class="container-sale">
-        <hr />
         <h3>We also have cassettes and vinyl on sale</h3>
         <div>
           <img
+            class="image-aside"
             src="images/old-school-cassettes.jpg"
-            alt="image of old school"
+            alt="image of something old school"
           />
           <p id="arrow">></p>
         </div>
       </section>
+      <hr/>
       <section class="info">
-        <hr />
         <h3>Employee of the month</h3>
         <p>It's Super Mario!</p>
-        <img src="images/mario400.png" alt="Picture of employee of the month" />
+        <img
+          class="image-aside"
+          src="images/mario400.png"
+          alt="Picture of employee of the month"
+        />
       </section>
-    </main>
+    </aside>
+    <hr />
     <footer>
-      <hr />
-      <p>©Copyright 2050 by nobody. All rights reversed.</p>
+      <p>© Copyright 2050 by nobody. All rights reversed.</p>
       <br />
       <button>Enter name</button>
     </footer>
